@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas PHP</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1>Base de Datos Películas (CRUD en PHP)</h1>
+    <h2>Altas , Modificaciones y Bajas de Titulos</h2>
+    <button onclick="showAddForm()">Agregar Película</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Año de Estreno</th>
+                <th>Género</th>
+                <th>Director</th>
+                <th>Actores</th>
+                <th>Sinopsis</th>
+                <th>Rating</th>
+                <th>Poster</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="moviesTable">
+            <!-- Películas se cargarán aquí -->
+        </tbody>
+    </table>
+
+    <div id="movieForm" style="display:none;">
+        <h2 id="formTitle">Agregar Película</h2>
+        <form id="form">
+            <input type="hidden" id="movieId">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo"><br><br>
+            <label for="ano_estreno">Año de Estreno:</label>
+            <input type="number" id="ano_estreno"><br><br>
+            <label for="genero">Género:</label>
+            <input type="text" id="genero"><br><br>
+            <label for="director">Director:</label>
+            <input type="text" id="director"><br><br>
+            <label for="actores">Actores:</label>
+            <textarea id="actores"></textarea><br><br>
+            <label for="sinopsis">Sinopsis:</label>
+            <textarea id="sinopsis"></textarea><br><br>
+            <label for="rating">Rating:</label>
+            <input type="number" step="0.1" id="rating"><br><br>
+            <label for="poster">Poster URL:</label>
+            <input type="text" id="poster"><br><br>
+            <button type="button" onclick="saveMovie()">Guardar</button>
+            <button type="button" onclick="hideForm()">Cancelar</button>
+        </form>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
