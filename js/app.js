@@ -1,4 +1,4 @@
-const APIURL = 'http://localhost:8080/Curso_PHP/CRUD_MOVIES/index.php';//ruta del projecto (dentro de XAMPP)
+const APIURL = 'http://localhost/CRUD_MOVIES/index.php';//ruta del projecto (dentro de XAMPP)
 
 document.addEventListener('DOMContentLoaded', loadMovies);
 
