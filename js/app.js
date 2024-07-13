@@ -18,7 +18,7 @@ function loadMovies() {
                     <td>${movie.actores}</td>
                     <td>${movie.sinopsis}</td>
                     <td>${movie.rating}</td>
-                    <td><img src="${movie.poster}" alt="${movie.titulo}" style="width:50px;"></td>
+                    <td><img src="${movie.poster}" alt="${movie.titulo}" style="width:200px;"></td>
                     <td>
                         <button onclick="editMovie(${movie.id})">Editar</button>
                         <button onclick="deleteMovie(${movie.id})">Eliminar</button>
